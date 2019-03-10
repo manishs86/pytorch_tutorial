@@ -12,6 +12,11 @@ def attr(obj):
     return [x for x in dir(obj) if not x.startswith("_")]
 
 
+def ptitle(title):
+    print("#" * 80)
+    print(f"# {title}")
+
+
 ################################################################################
 # PyTorch
 class DogsCatsDataset(ImageFolder):
